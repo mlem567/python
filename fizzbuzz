@@ -1,0 +1,25 @@
+# fizz buzz print numbers from 1 to 100, if multiple of 3 print fizz, if multiple of 5 print Buzz
+# if prime number print Prime
+# Mike Lem
+
+# function to find prime numbers
+def is_prime(n):
+    if n<=1:
+        return False
+    for i in range(2, n): #pass in the range. prime must be greater than 2.
+        if n%i == 0:
+            return False # not a prime
+    return True #if prime
+
+for i in range(101):
+    if i%3 ==0 and i%5 ==0:
+        print("FizzBuzz")
+    elif i%3 ==0:
+        print("Fizz")
+    elif i%5 == 0:
+        print("Buzz")
+    # call function to test if number is prime. if True print prime.
+    elif is_prime(i) == True:
+        print("Prime")
+    else:
+        print(i)
