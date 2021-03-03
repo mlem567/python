@@ -1,0 +1,10 @@
+import pprint
+
+message = "Fore score and seven years ago."
+count = {} # key value of letter and number of times it appears ie; "r" : 3
+
+for character in message.upper(): #count all the upper and lower chars
+    count.setdefault(character, 0) # set the char count to 0
+    count[character] = count[character] + 1
+
+pprint.pprint(count)
