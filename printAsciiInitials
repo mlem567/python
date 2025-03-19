@@ -1,0 +1,33 @@
+#mike lem
+#i like to eat hamburgers and cheeseburgers
+#this python prints out my first and last initials in ascii characters
+
+ascii_m = [
+"M   M" "  L",
+"MM MM" "  L",
+"MM MM""  L",
+"M M M""  L",
+"M   M" "  L",
+"M   M" "  L",
+"M   M" "  LLLLL"
+]
+
+#print the initials in a row 
+for line in ascii_m:
+  print(line)
+
+#print a new line for the next ascii letter
+print("\n")
+
+#print my last ascii letter
+ascii_l = [
+"L",
+ "L",
+ "L",
+ "L",
+ "L",
+ "L",
+ "LLLLL"
+]
+for line in ascii_l:
+  print(line)
